@@ -3,7 +3,8 @@ footer {
         color: $font-color-primary;
         font-size: $font-size-default;
         a {
-            color: $color-secondary;
+            color:$font-color-secondary;
+            text-decoration: none;
         }
     }
 }

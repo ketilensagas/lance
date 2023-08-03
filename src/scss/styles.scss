@@ -1,14 +1,15 @@
-$color-primary: #195484;
-$color-secondary: #f58220;
-$font-color-primary: #ffffff;
-$font-color-secondary: #454545;
+$color-primary: #7924b95c;
+$color-secondary:#FFFFFF ;
+$font-color-primary: rgba(255, 255, 255, 0.836);
+$font-color-secondary: #000000;
 $font-default: Arial, Helvetica, sans-serif;
-$font-size-default: 1.6rem;
-$font-size-nav: 1.8rem;
+$font-size-default: 1.5rem;
+$font-size-nav: 1.7rem;
 
 @import 'fonts';
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
 @import 'nav';
+
 
 html {
     font-size: 62.5%;
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-    background-color: $color-primary;
+    background: linear-gradient(90deg, #6928af 0%, #ab7dd9 39%, #19a1bd 100%);
     font-family: $font-default;
     margin: 0;
 }
@@ -30,8 +31,8 @@ h1 {
 article {
 
     h1 {
-        color: $color-secondary;
-        font-size: 3rem;
+        color: $font-color-secondary;
+        font-size: 1.8rem;
         text-align: left;
     }
 
@@ -42,8 +43,8 @@ h2 {
     font-family: 'freshman', sans-serif;
     font-weight: 700;
     font-size: 2rem;
-    margin-top: 4rem;
-    text-shadow: 1px 2px 8px #FFFFFF;
+    margin-top: 1rem;
+    text-shadow: 1px 2px 8px $color-secondary;
 }
 
 #root,
@@ -56,15 +57,24 @@ footer {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 2rem 0;
     margin: 0;
 }
 
 .container {
     display: flex;
     flex-flow: column;
-    margin: 0 auto;
+    margin: 1rem auto;
     max-width: 90vw;
+
+    @media (max-width: 768px){
+        max-width: 98%;
+
+    }
+    @media(min-width: 1024px){
+
+    }
+
 }
 
 @import 'animations';
@@ -74,3 +84,4 @@ section {
 @import 'vitrine';
 @import 'steps';
 @import 'footer';
+@import 'responsive';

@@ -1,8 +1,8 @@
 
 .nav {
     display: flex;
-    justify-content: space-between;
-    width: 280px;
+    justify-content: space-evenly;
+    width: 100%;
     align-items: center;
 
     &__item {
@@ -11,7 +11,7 @@
         text-decoration: none;
         position: relative;
         &:hover {
-            color: $color-secondary;
+            color: #3a1059;
             animation: toTop;
             animation-duration: 1s;
         }
